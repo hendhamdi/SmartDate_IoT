@@ -6,14 +6,14 @@
 
 ## 📖 Présentation
 
-**SmartDate IoT** est un système intelligent de **classification automatique des dattes Deglet Nour** basé sur le **Deep Learning (MobileNetV2)** et intégré dans une **architecture IoT simulée**.  
+**SmartDate IoT** est un système intelligent de **classification automatique des dattes Deglet Nour** basé sur un modèle de **Deep Learning avancé (EfficientNetB3)** et intégré dans une **architecture IoT simulée**.  
 L’objectif est de reconnaître automatiquement 11 types de dattes à partir d’images capturées par webcam ou issues d’un dataset, puis de publier les résultats en temps réel via **MQTT** vers un **dashboard web interactif**.
 
 ---
 
 ## 🧠 Objectifs
 
-1. Concevoir un modèle DL performant pour classifier les dattes.
+1. Concevoir un modèle DL **hautement performant** pour classifier les dattes.
 2. Intégrer ce modèle dans une chaîne IoT connectée.
 3. Simuler la communication entre le capteur (webcam), le cloud (broker MQTT) et l’interface web.
 4. Fournir un outil d’aide à la décision pour la valorisation des produits agricoles tunisiens.
@@ -25,13 +25,14 @@ L’objectif est de reconnaître automatiquement 11 types de dattes à partir d�
 ```plaintext
 SmartDate-IoT/
 │
-├── Colab_Notebooks/                 → Entraînement du modèle sur Google Colab
-├── Date_Dataset/                    → Images (train / validation / test)
-├── Docs/                            → Rapports, captures, documentation
-├── IOT/                             → Scripts MQTT (publisher/subscriber)
-├── Web_Dashboard/                   → Interface web de visualisation
+├── Colab_Notebooks/                     → Entraînement du modèle sur Google Colab
+├── Date_Dataset/                        → Images (train / validation / test)
+├── Docs/                                → Rapports, captures, documentation
+├── IOT/                                 → Scripts MQTT (publisher/subscriber)
+├── Web_Dashboard/                       → Interface web de visualisation
 │
-├── smartdate_mobilenetv2.h5         → Modèle entraîné sauvegardé
+├── models/
+|   └── smartdate_efficientnetb3.keras   → Modèle entraîné sauvegardé
 └── README.md
  ```
 
@@ -58,10 +59,9 @@ SmartDate-IoT/
 
 ## ⚙️ Étapes principales
 
-1️⃣ **Phase 1 :** Entraînement du modèle (Google Colab)  
-2️⃣ **Phase 2 :** Mise en place du broker MQTT et simulation IoT  
-3️⃣ **Phase 3 :** Développement du dashboard web connecté  
-
+1️⃣ **Phase 1 :** Entraînement avancé avec EfficientNetB3 + data augmentation + fine-tuning + scheduler.
+2️⃣ **Phase 2 :** Mise en place du broker MQTT et simulation IoT.
+3️⃣ **Phase 3 :** Interface dynamique affichant les résultats en temps réel.
 
 ---
 
