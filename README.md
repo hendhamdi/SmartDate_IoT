@@ -49,6 +49,7 @@ SmartDate-IoT/
 → Affiche les prédictions, l’historique et les recommandations automatiques.
 
 💡 **Recommandations intelligentes**
+
 Exp:
 - Type 3 → adapté à l’exportation.  
 - Type 8 → à conserver à basse température.
