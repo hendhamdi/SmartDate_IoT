@@ -65,6 +65,7 @@ Exp:
 - Préparation du dataset et data augmentation.
 - Entraînement d’EfficientNetB3 avec fine-tuning et scheduler.
 - Sauvegarde du modèle final dans models/smartdate_efficientnetb3.keras.
+
 2️⃣ **Phase 2 : Simulation IoT avec MQTT**
 - Configuration du broker MQTT (Mosquitto ou HiveMQ).
 - Script Python pour capture webcam + classification + publication en temps réel.
