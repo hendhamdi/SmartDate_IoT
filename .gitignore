@@ -1,1 +1,6 @@
 .history/
+.env
+IOT/utils.py
+SmartDateEnv/
+# Modèles volumineux
+yolov8n.pt

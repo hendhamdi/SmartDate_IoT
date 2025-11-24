@@ -1,6 +1,6 @@
 # 🌴 SmartDate IoT — Classification des Dattes Deglet Nour
 
-### 🌍 Projet universitaire — Mini-Projet IoT Partie-1
+### 🌍 Projet universitaire — Mini-Projet IoT Partie 1 et 2
 
 ---
 
@@ -25,11 +25,11 @@ L’objectif est de reconnaître automatiquement 11 types de dattes à partir d�
 ```plaintext
 SmartDate-IoT/
 │
-├── Colab_Notebooks/                     → Entraînement du modèle sur Google Colab
+├── Colab_Notebooks/                     → Entraînement du modèle sur Google Colab (Partie 1)
 ├── Date_Dataset/                        → Images (train / validation / test)
 ├── Docs/                                → Rapports, captures, documentation
-├── IOT/                                 → Scripts MQTT (publisher/subscriber)
-├── Web_Dashboard/                       → Interface web de visualisation
+├── IOT/                                 → Scripts MQTT (publisher/subscriber) (Partie 2)
+├── Web_Dashboard/                       → Interface web de visualisation (Partie 3)
 │
 ├── models/
 |   └── smartdate_efficientnetb3.keras   → Modèle entraîné sauvegardé
@@ -49,6 +49,7 @@ SmartDate-IoT/
 → Affiche les prédictions, l’historique et les recommandations automatiques.
 
 💡 **Recommandations intelligentes**
+Exp:
 - Type 3 → adapté à l’exportation.  
 - Type 8 → à conserver à basse température.
 
@@ -59,9 +60,17 @@ SmartDate-IoT/
 
 ## ⚙️ Étapes principales
 
-1️⃣ **Phase 1 :** Entraînement avancé avec EfficientNetB3 + data augmentation + fine-tuning + scheduler.
-2️⃣ **Phase 2 :** Mise en place du broker MQTT et simulation IoT.
-3️⃣ **Phase 3 :** Interface dynamique affichant les résultats en temps réel.
+1️⃣ **Phase 1 : Entraînement du modèle** 
+- Préparation du dataset et data augmentation.
+- Entraînement d’EfficientNetB3 avec fine-tuning et scheduler.
+- Sauvegarde du modèle final dans models/smartdate_efficientnetb3.keras.
+2️⃣ **Phase 2 : Simulation IoT avec MQTT**
+- Configuration du broker MQTT (Mosquitto ou HiveMQ).
+- Script Python pour capture webcam + classification + publication en temps réel.
+
+3️⃣ **Phase 3 : Interface web interactive** 
+- Dashboard dynamique affichant les résultats en temps réel.
+- Historique et recommandations intelligentes.
 
 ---
 
