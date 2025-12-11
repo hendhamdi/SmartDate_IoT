@@ -13,7 +13,7 @@ This project demonstrates a complete pipeline:
 **Webcam → YOLOv8 → EfficientNetB3 → MQTT → Node.js → MongoDB → React Dashboard**
 
 <p align="center">
-  <img src="./Docs/architecture.png" width="500" alt="Architecture SmartDate IoT">
+  <img src="./Docs/architecture.png" width="400" alt="Architecture SmartDate IoT">
 </p>
 
 
@@ -161,7 +161,7 @@ npm install
 npm run dev
 ```
 
-
+--- 
 ## ⚖️ Licence
 
 This project is distributed under the **MIT license** — you are free to reuse it for **educational or personal purposes**, provided you cite the original author.
