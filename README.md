@@ -13,9 +13,9 @@ This project demonstrates a complete pipeline:
 **Webcam → YOLOv8 → EfficientNetB3 → MQTT → Node.js → MongoDB → React Dashboard**
 
 <p align="center">
-  <img src="./Docs/architecture.png" width="700" alt="Architecture SmartDate IoT">
+  <img src="./Docs/architecture.png" width="500" alt="Architecture SmartDate IoT">
 </p>
----
+
 
 ## 🎯 Objectives
 
@@ -31,20 +31,20 @@ This project demonstrates a complete pipeline:
 ```plaintext
 SmartDate-IoT/
 │
-├── Colab_Notebooks/                     
-├── Date_Dataset/                       
-├── Docs/                               
-├── IOT/                                 
+├── Colab_Notebooks/                         → Model training, evaluation, fine-tuning
+├── Date_Dataset/                            → Images for training/validation/testing
+├── Docs/                                    → Documentation + architecture images
+├── IOT/                                     → MQTT publisher/subscriber scripts
 │   ├── .env                             
 │   ├── detections_log.csv              
 │   ├── inference_publish_webcam.py      
 │   ├── mqtt_subscriber_save.py          
 │   └── utils.py                         
 │
-├── Web_App/
+├── Web_App/                                 → App web
 │   ├── server/
 │   │   ├── src/
-│   │   │   ├── server.js                
+│   │   │   ├── server.js                    → Main backend server
 │   │   │   ├── db.js                    
 │   │   │   ├── models/Detection.js     
 │   │   │   ├── services/mqttService.js  
@@ -53,7 +53,7 @@ SmartDate-IoT/
 │   │   ├── package.json
 │   │   └── node_modules/
 │   │
-│   ├── client/
+│   ├── client/                              → Frontend
 │   │   ├── src/
 │   │   │   ├── App.jsx, main.jsx, index.css
 │   │   │   ├── pages/Dashboard.jsx
@@ -73,7 +73,7 @@ SmartDate-IoT/
 │   │   └── node_modules/
 │
 ├── models/
-│   └── smartdate_efficientnetb3.keras   → Trained model
+│   └── smartdate_efficientnetb3.keras       → Trained model
 │
 └── README.md
  ```
