@@ -1,4 +1,4 @@
-# IOT/mqtt_logger.py — Logger MQTT pour SmartDate (version sécurisée avec .env)
+# IOT/mqtt_subscriber_save.py 
 import os, csv, json, ssl, time
 from datetime import datetime
 import paho.mqtt.client as mqtt

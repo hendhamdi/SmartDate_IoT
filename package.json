@@ -1,0 +1,10 @@
+{
+  "name": "smartdate-iot-root",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "npm --prefix Web_Dashboard run dev",
+    "start": "npm --prefix Web_Dashboard run dev",
+    "build": "npm --prefix Web_Dashboard run build"
+  }
+}
