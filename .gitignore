@@ -7,3 +7,4 @@ SmartDateEnv/
 yolov8n.pt
 
 utils.py
+detections_log.csv
