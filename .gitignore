@@ -1,6 +1,7 @@
 .history/
 .env
 IOT/utils.py
+IOT/detections_log.csv
 SmartDateEnv/
 # Modèles volumineux
 yolov8n.pt
